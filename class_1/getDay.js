@@ -4,4 +4,4 @@ var message = my_date.getDay();
 if (message == 4)
 	{
 console.log("Wednesday");
-}
+};
