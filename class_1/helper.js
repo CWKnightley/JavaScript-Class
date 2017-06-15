@@ -5,3 +5,5 @@ function echo(arg) {
     p.textContent = arg;
     printArea.appendChild(p);
 } 
+
+
