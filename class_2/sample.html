@@ -9,9 +9,19 @@
 <body>
  <div id="main"> </div>
  <script>
- var a = prompt("what's your birthday?");
- console.log(a);
-   echo(42);
+    
+ var a = prompt("What is your birthday? (example 2015-03-25)");
+ var divisorVar = 24*60*60;
+function calcAge(dateInput) {
+	var today = new Date().getTime();
+    var birthDate = new Date(dateInput);
+    var timeDiff = Math.abs(today.getTime() - birthDate.getTime());
+	var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    return diffDays;
+}
+
+let answer = calcAge(a);
+	 alert(answer);
  </script>
 </body>
 </html>

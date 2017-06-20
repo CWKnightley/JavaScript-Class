@@ -9,11 +9,19 @@
 <body>
  <div id="main"> </div>
  <script>
- let a = prompt("what's year were your born?");
- let age = (2017 - a);
- let days = age*365;
- console.log(days);
- echo(days);
+    
+ var a = prompt("What is your birthday? (example 2015-03-25)");
+ var divisorVar = 24*60*60;
+function calcAge(dateInput) {
+	var today = new Date().getTime();
+    var birthDate = new Date(dateInput);
+    var timeDiff = Math.abs(today.getTime() - birthDate.getTime());
+	var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    return diffDays;
+}
+
+var answer = calcAge(a);
+	 alert(answer);
  </script>
 </body>
 </html>
