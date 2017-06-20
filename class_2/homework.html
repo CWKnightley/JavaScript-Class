@@ -27,7 +27,7 @@ function calcAge(dateInput) {
 	var date2 = new Date(today);
 	var date1 = new Date(dateInput);
 	var timeDiff = Math.abs(date2.getTime() - date1.getTime());
-	var dayDifference = Math.abs(timeDiff / (1000 * 3600 * 24));
+	var dayDifference = Math.ceil(timeDiff / (1000 * 3600 * 24));
 	return dayDifference;
 }
 
