@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Astrological Signs</title>
+</head>
+
+<body>
+<script>
+	birthDay = prompt("What what the date of the month of your birthday?");
+	birthMonth = prompt("What what is the month of your birthday?");
+	let finalDate = new Date();
+	finalDate.setDate(birthDay);
+	finalDate.setMonth(birthMonth);
+	
+	if (finalDate.getDate >= 21 && finalDate.getDate <= 19 && finalDate.getMonth == 3 ||finalDate.getMonth == 4) {
+		alert("hello world");
+	}
+	
+	else {
+		alert("No");
+	}
+</script>
+</body>
+</html>

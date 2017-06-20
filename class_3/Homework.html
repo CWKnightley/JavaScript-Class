@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homework</title>
+</head>
+<script>
+	 let answer = parseInt(prompt("Enter a number."));
+	 let currentTime = new Date();
+	 let calc = currentTime.getHours();
+	 let minutes = currentTime.getMinutes();
+	if ((answer + calc) > 12 ) {
+		var laterTime = (answer + calc)%12;
+		alert(laterTime +":" + minutes);
+	}
+	
+	else {
+		var laterTime = answer + calc;
+		alert(laterTime + ":" + minutes);
+	}
+		
+
+</script>
+<body>
+</body>
+</html>
