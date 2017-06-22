@@ -8,22 +8,9 @@
 <script>
 	let zodiac = ["Rat", "Ox", "Tiger", "Rabit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"];
 	let yearChosen = parseInt(prompt("Pick a year."));
-	let referenceYear = yearChosen % 12;
-	if(referenceYear===0) 
-		{ 
-			alert("Monkey");
-		}
-	else if (referenceYear%12===1) {alert("Rooster");}
-    else if (referenceYear%12===2) {alert("dog");}
-    else if (referenceYear%12===3) {alert("Pig");}
-    else if (referenceYear%12===4) {alert("Rat");}
-    else if (referenceYear%12===5) {alert("Ox");}
-    else if (referenceYear%12===6) {alert("Tiger");}
-    else if (referenceYear%12===7) {alert("Rabit");}
-    else if (referenceYear%12===8) {alert("Dragon");}
-    else if (referenceYear%12===9) {alert("Snake");}
-    else if (referenceYear%12===10) {alert("Horse");}
-	else { alert("Invalid input");}
+	let referenceYear1 = yearChosen - 4;
+	let referenceYear = referenceYear1 % 12;
+	alert(zodiac[referenceYear]);
 </script>
 
 <body>
