@@ -7,19 +7,66 @@
 
 <body>
 <script>
-	birthDay = prompt("What what the date of the month of your birthday?");
-	birthMonth = prompt("What what is the month of your birthday?");
-	let finalDate = new Date();
-	finalDate.setDate(birthDay);
-	finalDate.setMonth(birthMonth);
+	let birthDay = prompt("What what the date of the month of your birthday? (ex: 19)"	);
+	let birthMonth = prompt("What what is the month of your birthday?");
+	let birthInt = parseInt(birthDay);
 	
-	if (finalDate.getDate >= 21 && finalDate.getDate <= 19 && finalDate.getMonth == 3 ||finalDate.getMonth == 4) {
-		alert("hello world");
+	
+	var months = ["Jauary", "February", "March", "April", "May", "June", "July", "September", "October", "November", "December"];
+	
+	
+	if (birthMonth == "march" && birthInt >= 21 && birthInt <= 31 || birthMonth == "april" && birthInt >= 1 && birthInt <= 19) {
+		alert("You are a Aries");
+	}
+	
+	else if (birthMonth == "april" && birthInt >= 20 && birthInt <= 30 || birthMonth == "may" && birthInt >= 1 && birthInt <= 20) {
+		alert("You are a Taurus");
+	}
+	
+	else if (birthMonth == "may" && birthInt >= 21 && birthInt <= 31 || birthMonth == "june" && birthInt >= 1 && birthInt <= 20) {
+		alert("You are a Gemini");
+	}
+	
+	else if (birthMonth == "june" && birthInt >= 21 && birthInt <= 30 || birthMonth == "july" && birthInt >= 1 && birthInt <= 22) {
+		alert("You are a Cancer");
+	}
+
+	else if (birthMonth == "july" && birthInt >= 23 && birthInt <= 31 || birthMonth == "august" && birthInt >= 1 && birthInt <= 22) {
+		alert("You are a Leo");
+	}
+	
+	else if (birthMonth == "august" && birthInt >= 23 && birthInt <= 31 || birthMonth == "september" && birthInt >= 1 && birthInt <= 22) {
+		alert("You are a Virgo");
+	}
+	
+	else if (birthMonth == "september" && birthInt >= 23 && birthInt <= 30 || birthMonth == "october" && birthInt >= 1 && birthInt <= 22) {
+		alert("You are a Libra");
+	}
+	
+	else if (birthMonth == "october" && birthInt >= 23 && birthInt <= 31 || birthMonth == "november" && birthInt >= 1 && birthInt <= 21) {
+		alert("You are a Scorpio");
+	}
+	
+	else if (birthMonth == "november" && birthInt >= 23 && birthInt <= 30 || birthMonth == "december" && birthInt >= 1 && birthInt <= 21) {
+		alert("You are a Saggitarius");
+	}
+	
+	else if (birthMonth == "december" && birthInt >= 22 && birthInt <= 31 || birthMonth == "january" && birthInt >= 1 && birthInt <= 19) {
+		alert("You are a Capricorn");
+	}
+	
+	else if (birthMonth == "january" && birthInt >= 20 && birthInt <= 31 || birthMonth == "february" && birthInt >= 1 && birthInt <= 18) {
+		alert("You are a Aquarius");
+	}
+	
+	else if (birthMonth == "february" && birthInt >= 19 && birthInt <= 28 || birthMonth == "march" && birthInt >= 1 && birthInt <= 20) {
+		alert("You are a Libra");
 	}
 	
 	else {
-		alert("No");
+		alert("You incorrectly entered the date one of the values. Reload page and try again.");
 	}
+
 </script>
 </body>
 </html>
