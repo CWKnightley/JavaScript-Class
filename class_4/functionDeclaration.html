@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>functionDeclaration</title>
+</head>
+
+<body>
+
+<script>
+	let a = prompt("Enter a number");
+	let check = parseInt(a);
+
+	function functionDec(x) {
+		let sqRt= Math.sqrt(x);
+		for (let i = 2; i <= sqRt; i++) {
+			if ((check % i) == 0) {
+				return false;
+			}
+			else {
+				return true;
+			}
+		}
+	}
+	
+	
+	let ansr= functionDec(check);
+	console.log(ansr);
+	
+</script>
+</body>
+</html>
