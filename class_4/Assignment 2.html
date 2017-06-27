@@ -8,19 +8,19 @@
 <body>
 
 <script>
-	let a = prompt("Enter a number");
+	let a = prompt("Enter a non-negative number.");
 	let check = parseInt(a);
 
 	function functionDec(x) {
 		let sqRt= Math.sqrt(x);
 		for (let i = 2; i <= sqRt; i++) {
+		
 			if ((check % i) == 0) {
 				return false;
 			}
-			else {
-				return true;
-			}
+
 		}
+		return true;
 	}
 	
 	

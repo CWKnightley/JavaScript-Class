@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HomeworkProb2</title>
+</head>
+
+<body>
+	<script>
+		let firstAnswr = prompt("Enter one integer.");
+		let secondAnswr = prompt("Enter another answer integer.");
+		let firstInt = parseInt(firstAnswr);
+		let secondInt = parseInt(secondAnswr);
+		let counter = parseInt("1");
+		
+		while (counter < secondInt) {
+			firstInt = firstInt + firstInt;
+			counter++;
+		}
+		
+		console.log(firstInt);
+	</script>
+</body>
+</html>
