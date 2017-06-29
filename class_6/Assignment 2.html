@@ -7,21 +7,20 @@
 	<script>
 		function arrFilter (inputAr) {
 			var newArr = []; 
+			//initial for look that gose throug all of the indexes of the given array
 			for(i = 0; i < inputAr.length; i++){
 				let compCheck = false;
-				for (y = 0; y < newArr.length; y++) {
-					if (inputAr[i] == newArr[y]) {
-						compCheck = true;
-					}
+				if (inputAr[i] == newArr[i-1]){
+					compCheck = true;
 				}
-				if (compCheck == false) {
+				else if (compCheck == false) {
 					newArr.push(inputAr[i]);
 				}
 			}
 			console.log(newArr);
 		}
 		
-		var a = [1,2,2,3]
+		var a = [1,2,2,3,5]
 		arrFilter(a);
 	</script>
 <body>
