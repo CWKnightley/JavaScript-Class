@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment 2</title>
+</head>
+	<script>
+		function arrFilter (inputAr) {
+			var newArr = []; 
+			for(i = 0; i < inputAr.length; i++){
+				let compCheck = false;
+				for (y = 0; y < newArr.length; y++) {
+					if (inputAr[i] == newArr[y]) {
+						compCheck = true;
+					}
+				}
+				if (compCheck == false) {
+					newArr.push(inputAr[i]);
+				}
+			}
+			console.log(newArr);
+		}
+		
+		var a = [1,2,2,3]
+		arrFilter(a);
+	</script>
+<body>
+</body>
+</html>
