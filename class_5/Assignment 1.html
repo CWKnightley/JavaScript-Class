@@ -5,16 +5,33 @@
 <title>Assignment 1</title>
 </head>
 	<script>
-		var exp1 = {
-				ratings: [],
-				averageRatings: 0
+		function Movie (newTitle) {		
+				this.totalRatings = [];
+				this.averageRatings = 0;	
+				this.title=newTitle;
+		}
+		
+		Movie.prototype.addRating = function (addRating) {
+			this.totalRatings.push(addRating);
+			var sum = 0;
+			for (i = 0; i < this.totalRatings.length; i++) {
+				sum = sum + parseInt(this.totalRatings[i]);
 			}
+			var average = sum/this.totalRatings.length;
+			this.averageRatings = average;
+		};
 		
-			alert(exp1.ratings[1]);
-	
-
+		var test = new Movie("test");
+		console.log(test.title);
 		
-	</script>
+		test.addRating(30);
+		
+		console.log(test.averageRatings);
+		
+		test.addRating(4);
+		
+		console.log(test.averageRatings);
+    </script>
 <body>
 </body>
 </html>

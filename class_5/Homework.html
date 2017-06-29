@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Testing file</title>
+</head>
+	<script>
+		function characterCount(word, character) {
+		
+		   var count = 0;
+			for (i = 0; i < word.length; i++) {
+			   if (word[i] == character) {
+				   count++;
+			   }
+		  }
+			var answer = {
+				numOfChars: count	
+			}
+		  return "The letter " + character + " appears " + answer.numOfChars + " times in the word " + word ;
+		}
+		var letter = prompt("Choose a letter.");
+		var phrase = prompt("Enter a phrase");
+		alert(characterCount(phrase, letter));
+    </script>>
+<body>
+</body>
+</html>
